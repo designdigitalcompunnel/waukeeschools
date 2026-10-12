@@ -535,3 +535,14 @@ button,.btn,.search-toggle,.hero-note,.pathway-card,.program-card,.story-card,.r
 .schools-programs-page .sp-load-more:focus-visible{outline:3px solid var(--sp-lime);outline-offset:3px}
 .schools-programs-page .sp-load-more:disabled{opacity:.6;cursor:default}
 @media(prefers-reduced-motion:reduce){.schools-programs-page .sp-load-more{transition:none}}
+
+
+/* Latest requested refinements: keep hero abstract behind the Waukee CSD card. */
+.waukee-hero .hero-geometry { z-index: 1; }
+.waukee-hero .hero-note { z-index: 3; position: absolute; }
+.waukee-hero .hero-content { z-index: 2; }
+
+/* Schools & Programs: simplify search bar and keep its icon/input aligned. */
+.schools-programs-page .sp-search-box { gap: 14px; }
+.schools-programs-page .sp-search-box input { flex: 1; }
+.schools-programs-page .sp-hero .hero-actions .btn-outline-light span { display: inline-block; transform: translateY(-1px); }
